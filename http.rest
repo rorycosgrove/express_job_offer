@@ -40,12 +40,12 @@ Content-Type: application/json
     "duration":10
 }
 
-###
+### Try to update an expired offer
 
 PATCH http://localhost:3000/offers/update
 Content-Type: application/json
 
 { 
-    "id":"5f56e7ab6398a2205881f01c",
+    "id":"5f56de4d5c07440a38dbc3b7",
    "status":"EXPIRED"
 }

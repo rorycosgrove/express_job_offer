@@ -1,7 +1,13 @@
 # express_offer
- 
+
+Description
+____________________________________________________________________
+
+
+
+
 Setup
-__________________________________
+____________________________________________________________________
 
 To install:
  1) Rename .env_sample to .env 
@@ -10,8 +16,10 @@ To install:
 To run the application on port 3000 with nodemon
  - npm start
 
- To run the tests:
+To run the tests, execute the following in a second terminal window
   - npm test
+  - Individual POST/PATCH/GET calls can be made from http.rest using
+    https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
  
 ____________________________________________________________________
