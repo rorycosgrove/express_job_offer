@@ -2,8 +2,8 @@
 
 Description
 ____________________________________________________________________
-
-
+A simple JavaScript API using Node, Express and Jest which allows a user 
+to create a product offer.
 
 
 Setup
