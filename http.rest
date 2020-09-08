@@ -1,0 +1,51 @@
+## Dev testing with REST Client
+## https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/3
+
+###
+GET http://localhost:3000/offers
+
+###
+GET http://localhost:3000/offers/5f56d8b849475677e8ebcacf
+
+###
+
+POST http://localhost:3000/offers/create
+Content-Type: application/json
+
+{ 
+    "product_id":3,
+    "description": "Test offer",
+    "price": 100,
+    "currency": "GBP",
+    "start_date": "01-Jan-2020",
+    "end_date": "01-Jan-2021"
+}
+
+### Fail on missing product_id
+
+POST http://localhost:3000/offers/create
+Content-Type: application/json
+
+{ 
+    "description": "Test offe21321r",
+    "price": 100,
+    "currency": "GBP",
+    "start_date": "01-Jan-2020",
+    "duration":10
+}
+
+###
+
+PATCH http://localhost:3000/offers/update
+Content-Type: application/json
+
+{ 
+    "id":"5f56e7ab6398a2205881f01c",
+   "status":"EXPIRED"
+}
