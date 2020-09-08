@@ -107,7 +107,6 @@ describe('Cancel an expired offer', () => {
             .then(res => {
                 const offer = res.data
             }).catch((error) => {
-                console.log(error.isAxiosError)
                 expect(error.isAxiosError).toBe(true)
             })
 
